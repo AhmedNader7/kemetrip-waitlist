@@ -17,6 +17,11 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: "KemeTrip",
   description: "KemeTrip landing page",
+  icons: {
+    icon: [{ url: "/kemetrip-logo.jpg", type: "image/jpeg" }],
+    shortcut: "/kemetrip-logo.jpg",
+    apple: "/kemetrip-logo.jpg",
+  },
 };
 
 export default function RootLayout({
