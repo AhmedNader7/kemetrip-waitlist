@@ -22,10 +22,6 @@ export function HeroSection({ language, theme }: HeroSectionProps) {
     ? "المسافرون: انضم لقائمة الانتظار"
     : "Travelers: Join Waitlist";
 
-  const agencyCta = isArabic
-    ? "الشركات: كن شريكاً معنا"
-    : "Agencies: Partner With Us";
-
   return (
     <section className="relative overflow-hidden px-4 pt-10 pb-16 sm:px-6 md:pt-14 md:pb-20">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -73,20 +69,12 @@ export function HeroSection({ language, theme }: HeroSectionProps) {
 
         <div className="mt-9 flex w-full max-w-xl flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://forms.gle/FemdokH1FmbBzgrA8"
+            href="https://forms.gle/UbjvDsXapjRrx1ax8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-yellow-500 px-6 py-3 text-center text-base font-bold text-slate-900 transition-colors duration-300 hover:bg-yellow-400 sm:w-auto"
           >
             {travelerCta}
-          </a>
-          <a
-            href="https://forms.gle/fWNcNv6o74rC5sbn8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-slate-600 bg-transparent px-6 py-3 text-center text-base font-bold text-slate-300 transition-colors duration-300 hover:border-yellow-500 hover:text-yellow-500 sm:w-auto"
-          >
-            {agencyCta}
           </a>
         </div>
       </div>
